@@ -1,0 +1,257 @@
+# =============================================================================
+# .gitignore — TCC MBA USP/Esalq
+# Vulnerabilidades em Código Java/Spring Gerado por Replit AI (OWASP Top 10 2025)
+# Autor: Anderson de Franklin Freitas Nogueira
+# =============================================================================
+
+
+# =============================================================================
+# JAVA
+# =============================================================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+
+# =============================================================================
+# MAVEN
+# =============================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+
+# =============================================================================
+# GRADLE (caso algum projeto gerado pelo Replit use)
+# =============================================================================
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+
+# =============================================================================
+# SPRING BOOT
+# =============================================================================
+spring-shell.log
+*.log
+logs/
+log/
+
+
+# =============================================================================
+# BANCO DE DADOS H2 (usado nos projetos gerados)
+# =============================================================================
+*.db
+*.mv.db
+*.trace.db
+*.lock.db
+
+
+# =============================================================================
+# INTELLIJ IDEA
+# =============================================================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+
+# =============================================================================
+# VS CODE
+# =============================================================================
+.vscode/
+*.code-workspace
+.history/
+
+
+# =============================================================================
+# ECLIPSE
+# =============================================================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+
+# =============================================================================
+# NETBEANS
+# =============================================================================
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+
+# =============================================================================
+# FERRAMENTAS SAST — SAÍDAS BRUTAS
+# Mantidas em analysis/raw/ via rastreamento explícito se necessário
+# =============================================================================
+
+# Semgrep
+.semgrep/
+.semgrep_cache/
+semgrep.sarif
+
+# SpotBugs / Find Security Bugs
+spotbugsXml.xml
+findbugsXml.xml
+*.fbp
+
+# SonarQube
+.sonar/
+.scannerwork/
+
+
+# =============================================================================
+# REPLIT
+# =============================================================================
+.replit
+replit.nix
+.upm/
+.cache/
+__pycache__/
+.pythonlibs/
+
+
+# =============================================================================
+# SISTEMA OPERACIONAL
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+
+# =============================================================================
+# SEGURANÇA — NUNCA VERSIONAR
+# =============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+*.truststore
+application-secret.yml
+application-secret.properties
+application-prod.yml
+application-prod.properties
+secrets/
+credentials/
+
+
+# =============================================================================
+# DEPENDÊNCIAS E PACOTES
+# =============================================================================
+node_modules/
+.npm/
+.yarn/
+vendor/
+
+
+# =============================================================================
+# PYTHON (pipeline de análise)
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =============================================================================
+# RELATÓRIOS E TEMPORÁRIOS
+# =============================================================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+report_*.xml
+report_*.json
+!analysis/raw/**/*.json
+!analysis/raw/**/*.xml
+
+
+# =============================================================================
+# DOCKER (se usado no pipeline)
+# =============================================================================
+.docker/
+docker-compose.override.yml
+
+
+# =============================================================================
+# COBERTURA DE TESTES
+# =============================================================================
+*.exec
+jacoco.exec
+coverage/
+.nyc_output/
+
+
+# =============================================================================
+# ARQUIVOS GRANDES / BINÁRIOS NÃO RASTREÁVEIS
+# Use Git LFS se precisar versionar PDFs dos artigos
+# =============================================================================
+*.pdf
+!docs/*.pdf
+references/papers/*.pdf
