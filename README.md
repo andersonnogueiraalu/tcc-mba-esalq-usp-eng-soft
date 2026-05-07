@@ -225,5 +225,6 @@ Este repositório está licenciado para uso **exclusivamente acadêmico e não c
 Todos os direitos reservados para uso comercial.
 Para autorizações, contato: andersonfreitas21@usp.br
 ```
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 > Este trabalho foi desenvolvido como requisito parcial para obtenção do título de MBA em Engenharia de Software pela USP/Esalq. O conteúdo representa exclusivamente as opiniões e conclusões do autor, não refletindo posicionamento oficial da instituição ou das ferramentas avaliadas.
